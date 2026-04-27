@@ -1,12 +1,160 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Perfil Profesional — Elías Rafael Martínez Flores</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <!-- Asumo que styles.css contiene los estilos que le dan el aspecto deseado -->
-  <link href="/styles.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Perfil Profesional — Elías Rafael Martínez Flores</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Asumo que styles.css contiene los estilos que le dan el aspecto deseado -->
+    <style>
+        :root {
+            --bg: #0f1724;
+            --card: #0b1220;
+            --accent: #06b6d4;
+            --muted: #94a3b8;
+            --glass: rgba(255,255,255,0.03)
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;
+            color: #e6eef6;
+            background: linear-gradient(180deg,#071023 0%, #071422 100%);
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: 36px auto;
+            padding: 28px;
+            background: linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));
+            border-radius: 14px;
+            box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+        }
+
+        header {
+            display: flex;
+            gap: 20px;
+            align-items: center
+        }
+
+        .avatar {
+            width: 110px;
+            height: 110px;
+            border-radius: 12px;
+            background: linear-gradient(135deg,var(--accent),#7c3aed);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 28px;
+            color: white;
+            box-shadow: 0 6px 20px rgba(6,182,212,0.12)
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 22px
+        }
+
+        p.lead {
+            margin: 6px 0 0;
+            color: var(--muted)
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: 28px;
+            margin-top: 22px
+        }
+
+        .card {
+            background: var(--card);
+            padding: 18px;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.02)
+        }
+
+        .section-title {
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #dbeafe
+        }
+
+        ul.skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 0;
+            margin: 0;
+            list-style: none
+        }
+
+            ul.skills li {
+                background: var(--glass);
+                padding: 6px 10px;
+                border-radius: 999px;
+                font-size: 13px;
+                color: var(--muted)
+            }
+
+        .meta {
+            font-size: 14px;
+            color: var(--muted)
+        }
+
+        .experience {
+            display: flex;
+            flex-direction: column;
+            gap: 12px
+        }
+
+        .job {
+            padding: 12px;
+            border-radius: 10px;
+            background: linear-gradient(180deg,rgba(255,255,255,0.01),transparent)
+        }
+
+            .job h4 {
+                margin: 0;
+                font-size: 15px
+            }
+
+            .job .date {
+                font-size: 13px;
+                color: var(--muted)
+            }
+
+        .projects {
+            display: flex;
+            flex-direction: column;
+            gap: 10px
+        }
+
+        footer {
+            margin-top: 18px;
+            text-align: center;
+            color: var(--muted);
+            font-size: 13px
+        }
+
+        @media (max-width:880px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .avatar {
+                width: 86px;
+                height: 86px;
+                font-size: 22px
+            }
+        }
+    </style>
 </head>
 <body>
   <main class="container" role="main">
@@ -99,17 +247,10 @@
           <!-- Si estas herramientas no se mencionaron explícitamente en tu experiencia, considera si quieres mantenerlas o ajustarlas. -->
         </section>
 
-        <section class="card" aria-labelledby="idiomas" style="margin-top:16px">
+        <!--<section class="card" aria-labelledby="idiomas" style="margin-top:16px">
           <h2 id="idiomas" class="section-title">Idiomas</h2>
           <p class="meta">Español (nativo) · Inglés (intermedio‑alto)</p>
-        </section>
-
-        <section class="card" aria-labelledby="contacto" style="margin-top:16px">
-          <h2 id="contacto" class="section-title">Contacto</h2>
-          <p class="meta">Email: <a href="mailto:martinezfloreseliasrafael123@gmail.com">martinezfloreseliasrafael123@gmail.com</a></p>
-          <p class="meta">GitHub: github.com/elias · LinkedIn: linkedin.com/in/elias</p>
-          <!-- Asegúrate de actualizar los enlaces de GitHub y LinkedIn con tus perfiles reales. -->
-        </section>
+        </section>-->
       </aside>
     </div>
 
